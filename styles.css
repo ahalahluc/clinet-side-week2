@@ -1,0 +1,104 @@
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #005fcc;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 0 6px 0;
+}
+
+.skip-link:focus {
+  left: 0.75rem;
+  top: 0.75rem;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+  margin: 0;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+nav a {
+  color: inherit;
+}
+
+main {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+form {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 32rem;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 0.25rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+input {
+  font: inherit;
+  padding: 0.55rem 0.65rem;
+}
+
+button {
+  font: inherit;
+  padding: 0.6rem 0.8rem;
+}
+
+.field-error {
+  margin: 0;
+  min-height: 1.2em;
+  color: #b00020;
+}
+
+.form-message {
+  margin: 0;
+  min-height: 1.2em;
+}
+
+input[aria-invalid="true"] {
+  border: 2px solid #b00020;
+}
+
+:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
